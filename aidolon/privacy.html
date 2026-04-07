@@ -1,0 +1,77 @@
+<!doctype html>
+<!--
+  Aidolon Privacy Policy — DRAFT v0
+  This is a starting template. Review by counsel required before relying on it
+  for production. Last updated: 2026-04-07.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aidolon — Privacy Policy</title>
+<style>
+  :root { --ink: #1a1a1a; --muted: #5a5a5a; --accent: #4A3FB8; --bg: #fafafa; }
+  html { background: var(--bg); }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: var(--ink); max-width: 720px; margin: 0 auto; padding: 48px 24px 96px;
+  }
+  h1 { font-size: 28px; margin: 0 0 4px; color: var(--accent); }
+  h2 { font-size: 18px; margin-top: 36px; }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+  a { color: var(--accent); }
+  code { background: #eee; padding: 1px 6px; border-radius: 4px; font-size: 14px; }
+  .draft {
+    background: #fff8c5; border-left: 4px solid #d4a72c;
+    padding: 12px 16px; border-radius: 4px; font-size: 14px; margin-bottom: 24px;
+  }
+</style>
+</head>
+<body>
+<h1>Aidolon — Privacy Policy</h1>
+<p class="meta">Last updated 2026-04-07. Operated by Slothful.</p>
+
+<div class="draft"><strong>Draft v0.</strong> This document is a starting template and has not yet been reviewed by counsel. It will be updated before public launch.</div>
+
+<h2>Who we are</h2>
+<p>Aidolon is a voice-first AI companion that runs on Ray-Ban Meta glasses paired with an iPhone app and a Mac-side reasoning agent. It is built and operated by an individual developer doing business as Slothful (the "operator", "we", "us"). Contact: <a href="mailto:dh3172@columbia.edu">dh3172@columbia.edu</a>.</p>
+
+<h2>What Aidolon does with data</h2>
+<p>Aidolon is designed to be a personal tool. The operator does not run a multi-tenant cloud service. Specifically:</p>
+<ul>
+  <li><strong>Audio.</strong> The glasses microphone is used for wake-word detection and live conversation. Audio is streamed to Google's Gemini Live API for speech-to-text and reasoning. Aidolon does not retain audio recordings.</li>
+  <li><strong>Camera frames.</strong> When the user invokes a vision request, individual frames from the glasses camera are sent to Gemini Live. Frames are not retained by Aidolon after the request completes.</li>
+  <li><strong>Delegated tasks.</strong> When Aidolon delegates a task ("send a message", "what's on my calendar"), the natural-language description is forwarded over the user's local network to a Mac-side agent owned by the user. The agent runs on the user's own machine; the operator never receives this data.</li>
+  <li><strong>Messages sent through Aidolon.</strong> Messages drafted by Aidolon and sent through Twilio RCS leave the user's device through Twilio's network. Twilio's privacy practices apply to those messages in transit. See <a href="https://www.twilio.com/legal/privacy">Twilio's privacy notice</a>.</li>
+  <li><strong>Diagnostic logs.</strong> The Mac-side agent writes local log files for debugging. These never leave the user's machine.</li>
+</ul>
+
+<h2>Third parties</h2>
+<p>Aidolon transmits data to the following third parties on the user's behalf:</p>
+<ul>
+  <li><strong>Google (Gemini Live API).</strong> Audio and camera frames for live AI processing. <a href="https://ai.google.dev/gemini-api/terms">Terms</a>.</li>
+  <li><strong>Anthropic (Claude API, via the Claude Agent SDK).</strong> Delegated reasoning tasks. <a href="https://www.anthropic.com/legal/privacy">Privacy notice</a>.</li>
+  <li><strong>Twilio (RCS).</strong> Messages sent on the user's behalf. <a href="https://www.twilio.com/legal/privacy">Privacy notice</a>.</li>
+  <li><strong>Meta (Wearables Device Access Toolkit).</strong> The Ray-Ban Meta glasses connection layer. <a href="https://www.meta.com/legal/privacy-policy/">Privacy notice</a>.</li>
+</ul>
+
+<h2>Data retention</h2>
+<p>The operator does not run servers that retain user data. All user-facing state lives on the user's iPhone, Mac, or in the third-party services listed above, each of which has its own retention policy.</p>
+
+<h2>Children</h2>
+<p>Aidolon is not intended for use by children under 13.</p>
+
+<h2>Your choices</h2>
+<ul>
+  <li>Disconnect the glasses or quit the iPhone app to stop all data flow at any time.</li>
+  <li>Stop the Mac-side agent process to revoke the iPhone's ability to delegate tasks.</li>
+  <li>Contact the operator to ask questions about this policy.</li>
+</ul>
+
+<h2>Changes</h2>
+<p>This policy may change as Aidolon evolves. Updates will be posted at this URL with a revised "last updated" date.</p>
+
+<h2>Contact</h2>
+<p>Questions: <a href="mailto:dh3172@columbia.edu">dh3172@columbia.edu</a>.</p>
+</body>
+</html>
