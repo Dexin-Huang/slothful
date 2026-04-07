@@ -25,12 +25,12 @@
 | **Logo image** | [`logo.png`](./logo.png) — 224×224, PNG, 10 KB |
 | **Banner image** | [`banner.jpg`](./banner.jpg) — 1140×448, JPEG q90, 37 KB |
 
-## Contact (placeholder — confirm before submitting)
+## Contact
 
 | Field | Value |
 |---|---|
-| **Email** | dh3172@columbia.edu |
-| **Phone** | *(none provided yet — Twilio accepts email-only)* |
+| **Email** | dexin@slothful.ai |
+| **Phone** | *(none provided — Twilio accepts email-only)* |
 
 ## Legal URLs
 
